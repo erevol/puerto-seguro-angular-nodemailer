@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="processForm(form.value)" #form="ngForm">
+            <div class="form-group">
+                <!-- Name -->
+                <label for="name" class="control-label">Nombre</label>
+                <input [(ngModel)]="name" type="text" class="form-control" id="name" name="name" placeholder="Tu nombre">
+            </div>
+
+            <div class="form-group">
+                <!-- Email -->
+                <label for="email" class="control-label">E-mail</label>
+                <input [(ngModel)]="email" type="text" class="form-control" id="email" name="email" placeholder="Tu dirección de correo">
+            </div>
+
+            <div class="form-group">
+                <!-- Message-->
+                <label for="message" class="control-label">Mensaje</label>
+                <textarea [(ngModel)]="message" class="form-control" id="message" name="message" placeholder="Tu mensaje" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <!-- Send Button -->
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
