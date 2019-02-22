@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `npm install` to download all dependencies.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --open` to start the frontend. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Backend
 
