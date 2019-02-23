@@ -10,6 +10,7 @@ import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MessageService } from './services/message.service';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { MessageService } from './services/message.service';
         NavbarComponent,
         ContactComponent,
         HeroComponent,
-        HomeComponent
+        HomeComponent,
+        NosotrosComponent
     ],
     imports: [
         BrowserModule,

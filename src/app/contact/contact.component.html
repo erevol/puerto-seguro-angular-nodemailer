@@ -1,28 +1,45 @@
-<div class="container">
-    <div class="row">
-        <form (ngSubmit)="processForm(form.value)" #form="ngForm">
-            <div class="form-group">
-                <!-- Name -->
-                <label for="name" class="control-label">Nombre</label>
-                <input [(ngModel)]="name" type="text" class="form-control" id="name" name="name" placeholder="Tu nombre">
+<section class="contact_area p_120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="contact_info">
+                    <div class="info_item">
+                        <i class="lnr lnr-home"></i>
+                        <h6>Córdoba, Argentina</h6>
+                        <p>Calle falsa 123, Barrio Abc</p>
+                    </div>
+                    <div class="info_item">
+                        <i class="lnr lnr-phone-handset"></i>
+                        <h6><a href="#">00 (440) 9865 562</a></h6>
+                        <p>Lun a Vie 9am a 6 pm</p>
+                    </div>
+                    <div class="info_item">
+                        <i class="lnr lnr-envelope"></i>
+                        <h6><a href="#">support@test.com</a></h6>
+                        <p>Puedes contactarnos por este medio!</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="form-group">
-                <!-- Email -->
-                <label for="email" class="control-label">E-mail</label>
-                <input [(ngModel)]="email" type="text" class="form-control" id="email" name="email" placeholder="Tu dirección de correo">
+            <div class="col-lg-9">
+                <form (ngSubmit)="processForm(form.value)" #form="ngForm" class="row contact_form" id="contactForm" novalidate="novalidate">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input [(ngModel)]="name" type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input [(ngModel)]="email" type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea [(ngModel)]="message" class="form-control" name="message" id="message" rows="1" placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <button type="submit" value="submit" class="btn submit_btn">Enviar</button>
+                    </div>
+                </form>
             </div>
-
-            <div class="form-group">
-                <!-- Message-->
-                <label for="message" class="control-label">Mensaje</label>
-                <textarea [(ngModel)]="message" class="form-control" id="message" name="message" placeholder="Tu mensaje" rows="3"></textarea>
-            </div>
-
-            <div class="form-group">
-                <!-- Send Button -->
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </form>
+        </div>
     </div>
-</div>
+</section>
